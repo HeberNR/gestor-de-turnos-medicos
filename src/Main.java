@@ -3,10 +3,12 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.logging.Logger;
 
+import model.Especialidad;
 import model.Medico;
 import model.Paciente;
 
-import static service.PacienteService.agregarPaciente;
+import static controller.MenuPacientes.gestionarPacientes;
+
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -27,6 +29,7 @@ public class Main {
 
     Scanner sc = new Scanner(System.in);
     ArrayList<Paciente> listaPacientes = new ArrayList<>();
+    ArrayList<Especialidad> listaEspecialidades = new ArrayList<>();
     ArrayList<Medico> listaMedicos = new ArrayList<>();
     String opcion;
 
@@ -35,8 +38,8 @@ public class Main {
       System.out.println("Sistema de gestion de turnos.");
       System.out.println("=============================\n");
       System.out.println("""            
-          1. Registrar nuevo paciente.
-          2. Registrar nuevo medico.
+          1. Gestion de pacientes.
+          2. Gestion de medicos.
           3. Asignar nuevo turno.
           4. Listar turnos.
           5. Listar pacientes.
@@ -50,31 +53,34 @@ public class Main {
       opcion = sc.nextLine();
       switch (opcion) {
         case "1":
-          agregarPaciente(listaPacientes, sc);
+          gestionarPacientes(listaPacientes, sc);
           break;
         case "2":
-          System.out.println("Funcionalidad en desarrollo \u23F3");
+          System.out.println("Funcionalidad en desarrollo ⏳");
           break;
         case "3":
-          System.out.println("Funcionalidad en desarrollo \u23F3");
+          System.out.println("Funcionalidad en desarrollo ⏳");
           break;
         case "4":
-          System.out.println("Funcionalidad en desarrollo \u23F3");
+          System.out.println("Funcionalidad en desarrollo ⏳");
           break;
         case "5":
-          System.out.println("Funcionalidad en desarrollo \u23F3");
+          System.out.println("Funcionalidad en desarrollo ⏳");
           break;
         case "6":
-          System.out.println("Funcionalidad en desarrollo \u23F3");
+          System.out.println("Funcionalidad en desarrollo ⏳");
           break;
         case "7":
-          System.out.println("Funcionalidad en desarrollo \u23F3");
+          System.out.println("Funcionalidad en desarrollo ⏳");
           break;
         case "8":
-          System.out.println("Funcionalidad en desarrollo \u23F3");
+          System.out.println("Funcionalidad en desarrollo ⏳");
           break;
         case "9":
           System.out.println("Saliendo del sistema...\uD83D\uDC4B");
+          break;
+        default:
+          System.out.println("Opción no válida");
       }
     } while (!opcion.equalsIgnoreCase("9"));
 

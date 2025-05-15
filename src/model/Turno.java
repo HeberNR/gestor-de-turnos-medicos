@@ -7,7 +7,7 @@ public class Turno {
   private Paciente paciente;
   private Medico medico;
 
-  public Turno(){
+  public Turno() {
 
   }
 
@@ -54,13 +54,15 @@ public class Turno {
     this.medico = medico;
   }
 
+  @Override
   public String toString() {
-    return "Turno {" +
-        "id=" + id +
-        ", fecha='" + fecha + '\'' +
-        ", hora='" + hora + '\'' +
-        ", paciente='" + paciente + '\'' +
-        ", medico='" + medico + '\'' +
-        '}';
+    return "Turno {\n"
+        + "  id=" + id + ",\n"
+        + "  fecha='" + fecha + "',\n"
+        + "  hora='" + hora + "',\n"
+        + "  paciente='" + paciente + "',\n"
+        + "  medico='" + medico + "'\n"
+        + '}';
   }
+
 }

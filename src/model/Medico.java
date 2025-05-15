@@ -60,7 +60,7 @@ public class Medico {
     return this.telefono;
   }
 
-  public void setEspecialidad(Especialidad especialidad){
+  public void setEspecialidad(Especialidad especialidad) {
     this.especialidad = especialidad;
   }
 
@@ -68,14 +68,16 @@ public class Medico {
     return this.especialidad;
   }
 
+  @Override
   public String toString() {
-    return "Medico {" +
-        "id=" + id +
-        ", nombre='" + nombre + '\'' +
-        ", apellido='" + apellido + '\'' +
-        ", matricula='" + matricula + '\'' +
-        ", telefono='" + telefono + '\'' +
-        '}';
+    return "Medico {\n"
+        + "  id = " + id + ",\n"
+        + "  nombre = '" + nombre + "',\n"
+        + "  apellido = '" + apellido + "',\n"
+        + "  matricula = '" + matricula + "',\n"
+        + "  telefono = '" + telefono + "'\n"
+        + '}';
   }
+
 
 }

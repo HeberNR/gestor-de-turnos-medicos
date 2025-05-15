@@ -8,6 +8,7 @@ public class Paciente {
   private String apellido;
   private String dni;
   private String telefono;
+  private static int contadorPacientes;
 
   public Paciente(ArrayList<Paciente> listaPacientes) {
 
@@ -17,11 +18,14 @@ public class Paciente {
     this.nombre = nombre;
     this.apellido = apellido;
     this.telefono = telefono;
+    contadorPacientes++;
+    this.id = contadorPacientes;
   }
 
   public Paciente(int id, String nombre, String apellido,
                   String dni, String telefono) {
-    this.id = id;
+    contadorPacientes++;
+    this.id = contadorPacientes;
     this.nombre = nombre;
     this.apellido = apellido;
     this.dni = dni;

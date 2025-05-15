@@ -1,15 +1,19 @@
 package service;
 
-import model.Paciente;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import model.Paciente;
+
+
 public class PacienteService {
   /*
-   * Aca basicamente van las funciones de paciente, agregar, editar, eliminar
-   * y tambien mostrar la lista completa
-   * */
+   * Gestionar Pacientes:
+   * Agregar ✅
+   * Buscar ✅
+   * Editar ✅
+   * Eliminar✅
+   * Mostrar ✅ */
 
   public static void agregarPaciente(ArrayList<Paciente> pacientes, Scanner sc) {
     System.out.println("-----------------------");
@@ -30,6 +34,11 @@ public class PacienteService {
     System.out.println("----------------");
     System.out.println("Buscar paciente.");
     System.out.println("----------------\n");
+
+    if (pacientes.isEmpty()) {
+      System.out.println("❌ No hay pacientes registrados.");
+      return null;
+    }
 
     System.out.println("Ingrese el nombre del paciente a buscar: ");
     String nombre = sc.nextLine();
@@ -93,8 +102,15 @@ public class PacienteService {
   }
 
   public static void mostrarPacientes(ArrayList<Paciente> pacientes) {
+    if (pacientes.isEmpty()) {
+      System.out.println("❌ No hay pacientes registrados.");
+      return;
+    }
+
+    System.out.println("📋 Lista de pacientes:");
     for (Paciente paciente : pacientes) {
       System.out.println(paciente);
     }
   }
+
 }
