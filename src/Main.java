@@ -7,6 +7,7 @@ import model.Especialidad;
 import model.Medico;
 import model.Paciente;
 
+import static controller.MenuMedicos.gestionarMedicos;
 import static controller.MenuPacientes.gestionarPacientes;
 
 
@@ -56,7 +57,7 @@ public class Main {
           gestionarPacientes(listaPacientes, sc);
           break;
         case "2":
-          System.out.println("Funcionalidad en desarrollo ⏳");
+          gestionarMedicos(listaMedicos, sc);
           break;
         case "3":
           System.out.println("Funcionalidad en desarrollo ⏳");

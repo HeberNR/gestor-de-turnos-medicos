@@ -70,14 +70,16 @@ public class Medico {
 
   @Override
   public String toString() {
-    return "Medico {\n"
-        + "  id = " + id + ",\n"
-        + "  nombre = '" + nombre + "',\n"
-        + "  apellido = '" + apellido + "',\n"
-        + "  matricula = '" + matricula + "',\n"
-        + "  telefono = '" + telefono + "'\n"
-        + '}';
+    String resultado = "Médico: " + nombre + " " + apellido;
+    if (matricula != null && !matricula.isEmpty()) {
+      resultado += " | Matrícula: " + matricula;
+    }
+    if (id != 0) {
+      resultado = "ID: " + id + " | " + resultado;
+    }
+    return resultado;
   }
+
 
 
 }

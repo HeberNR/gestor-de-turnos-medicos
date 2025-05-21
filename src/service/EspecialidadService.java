@@ -1,9 +1,10 @@
 package service;
 
-import model.Especialidad;
-
 import java.util.ArrayList;
 import java.util.Scanner;
+
+import model.Especialidad;
+
 
 public class EspecialidadService {
   /*

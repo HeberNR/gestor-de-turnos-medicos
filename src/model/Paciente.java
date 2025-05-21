@@ -72,6 +72,7 @@ public class Paciente {
     return this.telefono;
   }
 
+  @Override
   public String toString() {
     String resultado = "Paciente: " + nombre + " " + apellido + " | Tel: " + telefono;
     if (dni != null) {
