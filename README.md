@@ -2,20 +2,19 @@
 
 Proyecto para la materia Programación 1.
 
-Actualmente, el sistema funciona por consola y permite agregar pacientes. Otras funcionalidades relacionadas con pacientes están en desarrollo.
+Actualmente, el sistema funciona por consola y permite agregar pacientes y médicos. Otras funcionalidades relacionadas con médicos están en desarrollo.
 
-En el futuro, se planea ampliar el sistema para manejar médicos, turnos y mejorar la interfaz, integrando tecnologías web modernas como Angular (pendiente de aprender e implementar).
+En el futuro, se planea ampliar el sistema para manejar turnos y mejorar la interfaz, integrando tecnologías web modernas como Angular (pendiente de aprender e implementar).
 
 ---
 
 ## Funcionalidades actuales
 
-- Registro de pacientes por consola.
+- Gestión completa de pacientes (editar, eliminar, listar).
+- Gestión completa de médicos (editar, eliminar, listar).
 
 ## Funcionalidades en desarrollo
 
-- Gestión completa de pacientes (editar, eliminar, listar).
-- Registro y gestión de médicos.
 - Asignación, modificación y cancelación de turnos.
 - Interfaz web con tecnologías modernas.
 
